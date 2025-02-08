@@ -1,0 +1,50 @@
+using System;
+
+namespace SpecifiedOperationsResults
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double number1,number2,result;
+            string input,exceptionalResult = "∞";
+            char operation;
+            Console.WriteLine("Specified Operations Results");
+            Console.Write("Enter 1st number : ");
+            number1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter 2nd number : ");
+            number2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter Operation you want to Perform \nPress A for ADDITION \nPress S for SUBTRACTION \nPress M for Multiplication \nPress D for DIVIDE");
+            input = Console.ReadLine();
+            operation = char.ToUpper(input[0]);
+            switch (operation) {
+                case 'A':
+                    result = number1 + number2;
+                    Console.WriteLine("Your answer is "+ result);
+                break;
+                case 'S':
+                    result = number1 - number2;
+                    Console.WriteLine("Your answer is " + result);
+                    break;
+                case 'M':
+                    result = number1 * number2;
+                    Console.WriteLine("Your answer is " + result);
+                    break;
+                case 'D':
+                    switch (number2) {
+                        case 0:
+                            Console.WriteLine("In Division number2 can't be 0 \nAnswer is " + exceptionalResult);
+                        break;
+                        default:
+                            result = number1 / number2;
+                            Console.WriteLine("Your answer is " + result);
+                        break;
+                    }
+                break;
+                default:
+                    Console.WriteLine("You enter wrong operation! Please enter only A | S | M | D");
+                break;
+            }
+        }
+    }
+}
