@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DivideTwoNumbers
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("-------Divide Two Numbers----------");
+            Console.Write("Enter 1st Number : ");
+            double number1 = Convert.ToDouble(Console.ReadLine());
+           
+            Console.Write("Enter 2nd Number : ");
+            double number2 = Convert.ToDouble(Console.ReadLine());
+            double result = number1 / number2;
+            Console.WriteLine("Result is " + result);
+        }
+    }
+}
