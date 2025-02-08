@@ -1,3 +1,5 @@
+CODE
+
 using System;
 
 namespace Arithmetic_Operations
@@ -42,3 +44,18 @@ namespace Arithmetic_Operations
         }
     }
 }
+
+
+OUTPUT
+
+
+Arithmetic Operations
+Enter 1st number : 20
+Enter 2nd number : 20
+Which operation u want to perorm
+Press A for Addition
+Press S for Subtraction
+Press M for Multiplication
+Press D for Division
+A
+Answer after adding 20 and 20 is 40
