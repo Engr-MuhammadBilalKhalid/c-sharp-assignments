@@ -1,0 +1,27 @@
+using System;
+
+namespace Swap_Two_Numbers
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Swap Two Numbers\n");
+            double temp,firstNum, secondNum;
+            Console.Write("Enter first number : ");
+            firstNum = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter second number : ");
+            secondNum = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("\nOrignal Numbers");
+            Console.WriteLine("First number :" + firstNum);
+            Console.WriteLine("Second number :" + secondNum);
+            temp = firstNum;
+            firstNum = secondNum;
+            secondNum = temp;
+            Console.WriteLine("\nSwaped Numbers");
+            Console.WriteLine("First number :" + firstNum);
+            Console.WriteLine("Second number :" + secondNum);
+
+        }
+    }
+}
