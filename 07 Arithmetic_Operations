@@ -1,0 +1,44 @@
+using System;
+
+namespace Arithmetic_Operations
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Arithmetic Operations");
+            double num1, num2, result;
+            string operatr;
+            char operation,exceptionalResult = '∞';
+            Console.Write("Enter 1st number : ");
+            num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter 2nd number : ");
+            num2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Which operation u want to perorm \nPress A for Addition \nPress S for Subtraction \nPress M for Multiplication\nPress D for Division");
+            operatr = Console.ReadLine();
+            operation = char.ToLower(operatr[0]);
+            if (operation == 'a') {
+                result = num1 + num2;
+                Console.WriteLine("Answer after adding " + num1 + " and " + num2 + " is " + result);
+            }else if (operation == 's') {
+                result = num1 - num2;
+                Console.WriteLine("Answer after subtracting " + num2 + " from " + num1 + " is " + result);
+            }else if (operation == 'm'){
+                result = num1 * num2;
+                Console.WriteLine("Answer after multiplying " + num1 + " and " + num2 + " is " + result);
+            }else if (operation == 'd'){
+                switch (num2) {
+                    case 0:
+                        Console.WriteLine("Exception Divisor(num2) can't be zero(0) \nAnswer is "+ exceptionalResult);
+                    break;
+                    default:
+                        result = num1 / num2;
+                        Console.WriteLine("Answer after dividing " + num1 + " by " + num2 + " is " + result);
+                        break;
+                }
+            }else { 
+                Console.WriteLine("Operation not found Please Press Only A | S | M | D (Addition,Subtraction,Multiplication,Division) respectively");
+            }
+        }
+    }
+}
