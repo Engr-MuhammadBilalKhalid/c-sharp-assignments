@@ -1,0 +1,21 @@
+using System;
+
+namespace Multiply_Three_Numbers
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Multiply Three Numbers\n");
+            double numb1, numb2, numb3, result;
+            Console.Write("Enter 1st number : ");
+            numb1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter 2nd number : ");
+            numb2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter 3rd number : ");
+            numb3 = Convert.ToDouble(Console.ReadLine());
+            result = numb1 * numb2 * numb3;
+            Console.WriteLine("\nAnswer is " + result);
+        }
+    }
+}
