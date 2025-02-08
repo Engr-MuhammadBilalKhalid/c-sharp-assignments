@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SumOfTwoNumbers
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int number1, number2, result;
+            Console.WriteLine("Sum of Two Numbers");
+            Console.Write("Enter 1st Number : ");
+            number1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter 2nd Number : ");
+            number2 = Convert.ToInt32(Console.ReadLine());
+            result = number1 + number2;
+            Console.WriteLine("Result is "+ result);
+        }
+    }
+}
