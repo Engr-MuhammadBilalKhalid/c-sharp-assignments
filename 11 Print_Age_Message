@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Print_Age_Message
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Print Age Message");
+            Console.Write("Enter your age : ");
+            int age = Convert.ToInt32(Console.ReadLine());
+            if(age < 0 || age > 100)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid Age Please Enter realistic age");
+                Console.ResetColor();
+            }
+            else
+            {
+                if (age > 0 && age <= 12) {
+                    Console.WriteLine("You are KID");
+                }else if (age >= 13 && age <= 19 ) {
+                    Console.WriteLine("You are Teenager");
+                }else if (age >=20 && age <=45) {
+                    Console.WriteLine("You are Adult");
+                }else if (age >=46 ) {
+                    Console.WriteLine("You are OLD");
+                }
+            }
+        }
+    }
+}
+
+
+
+OUTPUT
+
+Print Age Message
+Enter your age : 88
+You are OLD
