@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Average_of_Four_Numbers
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Average of Four Numbers");
+            double num1, num2, num3, num4,result;
+            Console.Write("Enter 1st number : ");
+            num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter 2nd number : ");
+            num2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter 3rd number : ");
+            num3 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter 4th number : ");
+            num4 = Convert.ToDouble(Console.ReadLine());
+            result = num1 + num2 + num3 + num4;
+            result = result / 4;
+            Console.WriteLine("Average of 4 numbers u entered is " + result);
+        }
+    }
+}
+
+
+OUTPUT
+
+Average of Four Numbers
+Enter 1st number : 2.31
+Enter 2nd number : 2.63
+Enter 3rd number : 2.7
+Enter 4th number : 4.0
+Average of 4 numbers u entered is 2.91
