@@ -1,0 +1,36 @@
+using System;
+
+
+namespace Rectangle_Pattern_with_Number
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Rectangle Pattern with Number");
+
+            Console.Write("Enter digit u want to perform : ");
+            double digit = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("{0}{0}{0}", digit);
+            Console.WriteLine("{0} {0}", digit);
+            Console.WriteLine("{0} {0}", digit);
+            Console.WriteLine("{0} {0}", digit);
+            Console.WriteLine("{0}{0}{0}", digit);
+
+        }
+    }
+}
+
+
+
+
+
+OUTPUT
+
+Rectangle Pattern with Number
+Enter digit u want to perform : 2
+222
+2 2
+2 2
+2 2
+222
