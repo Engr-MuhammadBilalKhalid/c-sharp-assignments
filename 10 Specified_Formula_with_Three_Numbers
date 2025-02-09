@@ -1,0 +1,35 @@
+using System;
+
+namespace Specified_Formula_with_Three_Numbers
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Specified Formula with Three Numbers");
+            double x,y,z, result1, result2;
+            Console.Write("Enter 1st number : ");
+            x = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter 2nd number : ");
+            y = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter 3rd number : ");
+            z = Convert.ToDouble(Console.ReadLine());
+            result1 = (x + y) * z;
+            result2 = x * y + y * z;
+            Console.WriteLine("\nFormula 01 ---->>> (x+y).z \tAnswer is " + result1 + "\nFormula 02 ---->>> x.y + y.z \tAnswer is " + result2);
+        }
+    }
+}
+
+
+
+
+OUTPUT
+
+Specified Formula with Three Numbers
+Enter 1st number : 900
+Enter 2nd number : 800
+Enter 3rd number : 500
+
+Formula 01 ---->>> (x+y).z      Answer is 850000
+Formula 02 ---->>> x.y + y.z    Answer is 1120000
