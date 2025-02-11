@@ -1,0 +1,51 @@
+using System;
+
+namespace Celsius_to_Kelvin_and_Fahrenheit
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double fahrenhit, celcius, temp;
+            string convertor;
+            char conversion;
+            Console.Write("Enter Temperature : ");
+            temp = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Which conversion u want to perform \nPress C for F-->C \nPress F for C-->F : ");
+            convertor = Console.ReadLine();
+            conversion = char.ToUpper(convertor[0]);
+            switch (conversion) {
+                case 'C':
+                    fahrenhit = 9/5 * temp + 32;
+                    Console.Write(temp + " Celcius is equal to " + fahrenhit + " fahrenhit");
+                    break;
+                case 'F':
+                    celcius = 5 / 9 * temp - 32;
+                    Console.Write(temp + " Fahrenhit is equal to " + celcius + " Celcius");
+                    break;
+                default:
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Invalid conversion");
+                    Console.ResetColor();
+                 break;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+OUTPUT
+
+Enter Temperature : 200
+Which conversion u want to perform
+Press C for F-->C
+Press F for C-->F : c
+200 Celcius is equal to 232 fahrenhit
