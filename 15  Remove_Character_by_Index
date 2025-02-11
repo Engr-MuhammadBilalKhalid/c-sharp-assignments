@@ -1,0 +1,20 @@
+using System;
+
+namespace Remove_Character_by_Index
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string a = "REMOVING CHARACTER";
+            Console.WriteLine(removingChar(a, 2));
+        }
+        public static string removingChar(string charRemove, int indexRemove) { return charRemove.Remove(indexRemove,2); }
+    }
+}
+
+
+
+OUTPUT  
+
+REVING CHARACTER
