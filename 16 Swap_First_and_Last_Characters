@@ -1,0 +1,27 @@
+using System;
+
+namespace Swap_First_and_Last_Characters
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Swap_First_and_Last_Characters");
+            Console.Write("Enter any word : ");
+            string word = Console.ReadLine();
+            Console.WriteLine(SwappingLastAndFirstAlpha(word));
+        }
+        public static string SwappingLastAndFirstAlpha(string word) {
+            return word.Length > 1 ? word.Substring(word.Length - 1) + word.Substring(1, word.Length - 2) + word.Substring(0, 1) : word;
+        }
+    }
+}
+
+
+
+
+OUTPUT
+
+Swap_First_and_Last_Characters
+Enter any word : EngrMuhammadBilalKhalid
+dngrMuhammadBilalKhaliE
