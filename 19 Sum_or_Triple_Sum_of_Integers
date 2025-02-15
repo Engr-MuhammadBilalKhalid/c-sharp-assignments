@@ -1,0 +1,60 @@
+using System;
+
+namespace Sum_or_Triple_Sum_of_Integers
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char exeloop;
+            do
+            {
+                Console.WriteLine("\nSum or Triple Sum of Integers");
+                double firstnum, secondnum;
+                Console.Write("\nEnter 1st number : ");
+                firstnum = double.Parse(Console.ReadLine());
+                Console.Write("Enter 2nd number : ");
+                secondnum = double.Parse(Console.ReadLine());
+                Console.WriteLine(SumorTripleSumofIntegers(firstnum, secondnum));
+                Console.Write("\nDo u want more calculations? : ");
+                exeloop = Convert.ToChar(Console.ReadLine());
+                exeloop = char.ToLower(exeloop);
+            } while (exeloop == 'y');
+        }
+        public static double SumorTripleSumofIntegers(double num1,double num2)
+        {
+            double num3 = num1 + num2;
+            return num1 == num2 ? 3 * num3 : num3;
+        }
+    }
+}
+
+
+
+
+
+OUTPUT
+
+Sum or Triple Sum of Integers
+
+Enter 1st number : 20
+Enter 2nd number : 20
+120
+
+Do u want more calculations? : y
+
+Sum or Triple Sum of Integers
+
+Enter 1st number : 10
+Enter 2nd number : 10
+60
+
+Do u want more calculations? : y
+
+Sum or Triple Sum of Integers
+
+Enter 1st number : 10
+Enter 2nd number : 20
+30
+
+Do u want more calculations? : n
