@@ -1,0 +1,70 @@
+using System;
+
+namespace Check_Within_20_of_100_or_200
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char execloop;
+            do {
+                Console.WriteLine("\nCheck Within 20 of 100 or 200");
+                Console.Write("\nEnter number : ");
+                double num = double.Parse(Console.ReadLine());
+                Console.WriteLine(CheckWithin20of100or200(num));
+                Console.Write("\nDo u want to continue? :");
+                execloop = char.Parse(Console.ReadLine());
+                execloop = char.ToLower(execloop);
+            } while (execloop == 'y');
+        }
+        public static bool CheckWithin20of100or200(double num) {
+
+            if (num > 20 && num < 100 || num == 200) {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
+}
+
+
+
+OUTPUT
+
+Check Within 20 of 100 or 200
+
+Enter number : 10
+False
+
+Do u want to continue? :Y
+
+Check Within 20 of 100 or 200
+
+Enter number : 200
+True
+
+Do u want to continue? :Y
+
+Check Within 20 of 100 or 200
+
+Enter number : 75
+True
+
+Do u want to continue? :Y
+
+Check Within 20 of 100 or 200
+
+Enter number : 125
+False
+
+Do u want to continue? :Y
+
+Check Within 20 of 100 or 200
+
+Enter number : 19
+False
+
+Do u want to continue? :N
