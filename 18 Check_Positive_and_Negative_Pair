@@ -1,0 +1,73 @@
+using System;
+
+namespace Check_Positive_and_Negative_Pair
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char exeloop;
+            do {
+                Console.WriteLine("\nCheck Positive and Negative Pair");
+                double firstNum, secondNum;
+                Console.Write("\nEnter 1st number : ");
+                firstNum = double.Parse(Console.ReadLine());
+                Console.Write("Enter 2nd number : ");
+                secondNum = double.Parse(Console.ReadLine());
+                Console.WriteLine(Pair(firstNum, secondNum));
+                Console.Write("Do u want to chk more pairs ? : ");
+                exeloop = Convert.ToChar(Console.ReadLine());
+                exeloop = char.ToLower(exeloop);
+            } while (exeloop == 'y');
+        }
+
+        public static bool Pair(double num1,double num2) {
+            if (NumChk(num1) == "negative" && NumChk(num2) == "positive")
+            {
+                return true;
+            }else if (NumChk(num1) == "positive" && NumChk(num2) == "negative")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+           
+        }
+        public static string NumChk(double Num)
+        {
+            return Num < 0 ? "negative" : "positive";
+        }
+    }
+}
+
+
+
+
+
+
+
+
+OUTPUT
+
+Check Positive and Negative Pair
+
+Enter 1st number : -10
+Enter 2nd number : 10
+True
+Do u want to chk more pairs ? : y
+
+Check Positive and Negative Pair
+
+Enter 1st number : 10
+Enter 2nd number : -10
+True
+Do u want to chk more pairs ? : y
+
+Check Positive and Negative Pair
+
+Enter 1st number : 20
+Enter 2nd number : 20
+False
+Do u want to chk more pairs ? : n
