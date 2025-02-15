@@ -1,0 +1,66 @@
+using System;
+
+namespace Check_for_20_or_Sum_Equals_20
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("\nCheck for 20 or Sum Equals 20");
+            double num1,num2,result;
+            Console.Write("\nEnter 1st num : ");
+            num1 = double.Parse(Console.ReadLine());
+            Console.Write("Enter 2nd num : ");
+            num2 = double.Parse(Console.ReadLine());
+            result = num1 + num2;
+            Console.WriteLine(Checkfor20orSumEquals20(num1,num2,result));
+        }
+        public static bool Checkfor20orSumEquals20(double num1,double num2,double result) { 
+            if(num1 == 20 || num2 == 20 || result == 20)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+    }
+}
+
+
+
+
+OUTPUT
+
+Check for 20 or Sum Equals 20
+
+Enter 1st num : 20
+Enter 2nd num : 10
+True
+
+Do u want to continue? : y
+
+Check for 20 or Sum Equals 20
+
+Enter 1st num : 5
+Enter 2nd num : 15
+True
+
+Do u want to continue? : y
+
+Check for 20 or Sum Equals 20
+
+Enter 1st num : 12
+Enter 2nd num : 8
+True
+
+Do u want to continue? : y
+
+Check for 20 or Sum Equals 20
+
+Enter 1st num : 5
+Enter 2nd num : 8
+False
+
+Do u want to continue? : n
