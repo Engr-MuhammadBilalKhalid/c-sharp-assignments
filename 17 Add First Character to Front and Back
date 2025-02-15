@@ -1,0 +1,26 @@
+using System;
+
+namespace Add_First_Character_to_Front_and_Back
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Add First Character to Front and Back");
+            Console.Write("Enter any word : ");
+            string word = Console.ReadLine();
+            Console.WriteLine(AddFirstCharactertoFrontandBack(word));
+        }
+        public static string AddFirstCharactertoFrontandBack(string word)
+        {
+            string firstChar = word.Length > 1 ? word.Substring(0, 1) : word;
+            return firstChar + word + firstChar;
+        }
+    }
+}
+
+OUTPUT
+
+Add First Character to Front and Back
+Enter any word : DoCoding
+DDoCodingD
