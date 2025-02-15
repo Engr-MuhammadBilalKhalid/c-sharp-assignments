@@ -1,0 +1,51 @@
+using System;
+
+namespace Absolute_Difference_or_Double_It
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char execloop;
+            do {
+                Console.WriteLine("\nAbsolute Difference or Double It");
+                double firstnum, secondnum, difference;
+                Console.Write("\nEnter 1st number : ");
+                firstnum = double.Parse(Console.ReadLine());
+                Console.Write("Enter 2nd number : ");
+                secondnum = double.Parse(Console.ReadLine());
+                difference = firstnum - secondnum;
+                Console.WriteLine(AbsOrDouble(difference));
+                Console.Write("\nDo u want to continue? : ");
+                execloop = char.Parse(Console.ReadLine());
+                execloop = char.ToLower(execloop);
+            } while (execloop == 'y');
+        }
+        public static double AbsOrDouble(double difference)
+        {
+            return difference < 0 ? Math.Abs(difference) : 2 * difference;
+        }
+    }
+}
+
+
+
+
+
+OUTPUT
+
+Absolute Difference or Double It
+
+Enter 1st number : 10
+Enter 2nd number : 20
+10
+
+Do u want to continue? : y
+
+Absolute Difference or Double It
+
+Enter 1st number : 20
+Enter 2nd number : 10
+20
+
+Do u want to continue? : n
