@@ -1,0 +1,20 @@
+using System;
+using System.IO;
+
+namespace File_Size_in_Bytes
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            FileInfo file = new FileInfo("C:/Users/M Bilal Khalid/Downloads/CSharpNotesForProfessionals.pdf");
+            string fileByte = file.Length.ToString();
+            Console.WriteLine("Size of file is {0} bytes", fileByte);
+        }
+    }
+}
+
+
+OUTPUT
+
+Size of file is 6120243 bytes
