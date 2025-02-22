@@ -1,0 +1,26 @@
+using System;
+
+namespace Sum_of_Digits_in_Integer
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Sum of Digits in Integer");
+            Console.Write("Enter numbers u want to sum : ");
+            string number = Console.ReadLine();
+            double sum = 0,indexNum;
+            for (int i=0;i<number.Length;i++) {
+                indexNum = Convert.ToDouble(number[i].ToString());
+                sum += indexNum;
+            };
+            Console.WriteLine(sum);
+        }
+    }
+}
+
+OUTPUT
+
+Sum of Digits in Integer
+Enter numbers u want to sum : 123456789
+The sum of digits in integer is 45
