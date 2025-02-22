@@ -1,0 +1,22 @@
+using System;
+
+namespace Reverse_Words_in_Sentence
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string sentence = "Display the pattern like pyramid using the alphabet.";
+            string[] sentenceArray = sentence.Split();
+            Console.WriteLine("Orignal Sentence : {0} ", sentence);
+            Console.Write("Reversed Sentence : ");
+            for (int i=sentenceArray.Length-1; i>=0;--i) {
+                Console.Write("{0} ", sentenceArray[i]);
+            }
+        }
+    }
+}
+
+OUTPUT
+Orignal Sentence : Display the pattern like pyramid using the alphabet.
+Reversed Sentence : alphabet. the using pyramid like pattern the Display
